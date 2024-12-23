@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+
+    <ul class="language">
+        <li>JS</li>
+    </ul>
+    
+</body>
+<script>
+    function addLangAsList(language){
+        const li=document.createElement('li')
+        li.innerHTML=`${language}` //this is not optminisede as sthe dom has to traverse the tree to find the text node and then add the text
+        document.querySelector('.language').appendChild(li)
+
+
+    }
+    addLangAsList('Python')
+    addLangAsList('Java')
+  //Recommended approach for bigger projects
+    //creating a list using a optimised approach
+    function addLangListOptimised(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName)) //this is optimised as the text node is created and added in one go
+        document.querySelector('.language').appendChild(li)
+    }
+    addLangListOptimised('C++')
+</script>
+</html>

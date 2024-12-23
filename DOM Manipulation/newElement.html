@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+<body style="background-color: black; color: aliceblue;">
+
+
+   
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div)
+    div.className='newDiv'
+    div.id="newDiv"
+    div.setAttribute('title','newDiv')
+    div.setAttribute('style','color:red')
+    const addText=document.createTextNode('This is a new div')
+    div.appendChild(addText)
+    console.log(div)
+    document.body.appendChild(div)
+</script>
+</html>

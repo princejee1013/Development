@@ -1,0 +1,57 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Default background color */
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .container h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #grey {
+    background-color: grey;
+  }
+
+  #white {
+    background-color: white;
+    border: 1px solid #ccc; /* Optional border for better visibility */
+  }
+
+  #blue {
+    background-color: blue;
+  }
+
+  #yellow {
+    background-color: yellow;
+  }
+
+  #purple {
+    background-color: purple;
+  }
+
